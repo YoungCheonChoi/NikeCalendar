@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_shoedate"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/shoe_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_shoename"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/shoe_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_shoedate" />
+
+    <TextView
+        android:id="@+id/txt_shoeprice"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/shoe_price"
+        app:layout_constraintTop_toBottomOf="@+id/txt_shoename" />
+
+    <TextView
+        android:id="@+id/shoe_name"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="제품명"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/shoe_img"
+        app:layout_constraintTop_toBottomOf="@+id/shoe_date" />
+
+    <TextView
+        android:id="@+id/shoe_date"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="발매일"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/shoe_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shoe_price"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="가격"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/shoe_img"
+        app:layout_constraintTop_toBottomOf="@+id/shoe_name" />
+
+    <ImageView
+        android:id="@+id/shoe_img"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

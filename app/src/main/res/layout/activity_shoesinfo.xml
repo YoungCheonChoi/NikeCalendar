@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/shoesinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Shoes Information"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline36" />
+
+    <ImageView
+        android:id="@+id/shoesinfo_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/ic_menu_gallery"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinformation" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="발매일"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinfo_img" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="제품명"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FBE9E7"
+        android:text="삭제하기"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toBottomOf="@+id/websearch_btn" />
+
+    <Button
+        android:id="@+id/websearch_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="#FBE9E7"
+        android:text="공식 홈페이지로 이동"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinfo_shoeprice" />
+
+    <TextView
+        android:id="@+id/shoesinfo_shoeprice"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinfo_shoename" />
+
+    <TextView
+        android:id="@+id/shoesinfo_shoename"
+        android:layout_width="280dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinfo_date" />
+
+    <TextView
+        android:id="@+id/shoesinfo_date"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintTop_toBottomOf="@+id/shoesinfo_img" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="가격"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

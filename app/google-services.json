@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "343711712128",
+    "firebase_url": "https://nikecalendar-e7ffb.firebaseio.com",
+    "project_id": "nikecalendar-e7ffb",
+    "storage_bucket": "nikecalendar-e7ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343711712128:android:c5c0ff320bc2fc53e9b765",
+        "android_client_info": {
+          "package_name": "com.example.nikecalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343711712128-pi27qn4rb006kfig7n99dirfgaiauctg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nikecalendar",
+            "certificate_hash": "3a4023a1b1d1653f9821df584751ea206305781d"
+          }
+        },
+        {
+          "client_id": "343711712128-lqkmvsk1die2d77c2364bspso9vhfe2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq3B3x0ZxlXScPy0NCZpnA22Fc8TsFBls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343711712128-lqkmvsk1die2d77c2364bspso9vhfe2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

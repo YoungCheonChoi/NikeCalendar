@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main"
+        android:title="발매정보"
+        android:icon="@drawable/ic_main"
+        />
+
+    <item
+        android:id="@+id/calendar"
+        android:title="캘린더"
+        android:icon="@drawable/ic_claendar2"
+        />
+
+    <item
+        android:id="@+id/board"
+        android:title="중고거래 게시판"
+        android:icon="@drawable/ic_board"
+        />
+
+    <item
+        android:id="@+id/mypage"
+        android:title="마이페이지"
+        android:icon="@drawable/ic_mypage"
+        />
+</menu>

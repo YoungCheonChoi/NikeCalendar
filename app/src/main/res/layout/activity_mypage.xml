@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="MY PAGE"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toTopOf="@+id/guideline24" />
+
+    <ImageView
+        android:id="@+id/mypage_profileimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/mypage_nickname"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center_vertical"
+        android:hint="닉네임을 설정"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/mypage_profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mypage_profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_nickname" />
+
+    <TextView
+        android:id="@+id/mypage_email"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:hint="이메일주소"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mypage_profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_nickname" />
+
+    <View
+        android:layout_width="220dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/mypage_profileimg"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_email" />
+
+    <TextView
+        android:id="@+id/mypage_myboard"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="내가 쓴 글"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_profileimg" />
+
+    <Button
+        android:id="@+id/profileedit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:text="프로필 편집"
+        app:layout_constraintEnd_toStartOf="@+id/guideline23"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mypage_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mypage_recyclerview"
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
+        app:layout_constraintEnd_toStartOf="@+id/guideline23"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_myboard"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="로그아웃"
+        app:layout_constraintEnd_toStartOf="@+id/guideline23"
+        app:layout_constraintTop_toTopOf="@+id/guideline24" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mypagetobrd_btn"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="5dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginEnd="5dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:text="게시판"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline25"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/mypagetomypage_btn"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/mypagetocal_btn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mypagetomain_btn"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="5dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:text="발매정보"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline25"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/mypagetocal_btn"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline22" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mypagetocal_btn"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="5dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginEnd="5dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:text="캘린더"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline25"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/mypagetobrd_btn"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/mypagetomain_btn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mypagetomypage_btn"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="5dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:text="마이페이지"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline25"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline23"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/mypagetobrd_btn" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
